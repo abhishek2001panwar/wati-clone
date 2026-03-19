@@ -1,0 +1,81 @@
+/* =========================================================================
+   CSS VARIABLES & DESIGN TOKENS
+   ========================================================================= */
+:root {
+  --green: #00E785;
+  --green-dark: #00c471;
+  --green-text: #00A65F;
+  --dark: #1A1A1A;
+  --dark-mid: #2D2D2D;
+  --text: #1a1a1a;
+  --text-muted: #6b7280;
+  --text-light: #9CA3AF;
+  --bg: #ffffff;
+  --bg-light: #f0f2f7;
+  --bg-hero: #f8f9ff;
+  --border: #E5E7EB;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --transition: 0.22s ease;
+}
+
+/* =========================================================================
+   RESET
+   ========================================================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font); color: var(--text); background: var(--bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img, svg { display: block; max-width: 100%; }
+
+/* =========================================================================
+   LAYOUT
+   ========================================================================= */
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+section { overflow: hidden; }
+
+/* =========================================================================
+   BUTTONS
+   ========================================================================= */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 10px 20px; border-radius: 40px; font-family: var(--font);
+  font-weight: 600; font-size: 0.9375rem; cursor: pointer; border: 2px solid transparent;
+  transition: all var(--transition); white-space: nowrap;
+}
+.btn--primary { background: var(--green); color: var(--dark); border-color: var(--green); }
+.btn--primary:hover { background: var(--green-dark); border-color: var(--green-dark); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,231,133,0.3); }
+.btn--outline { background: transparent; color: var(--dark); border-color: var(--dark); }
+.btn--outline:hover { background: var(--dark); color: white; transform: translateY(-2px); }
+.btn--outline-dark { background: transparent; color: var(--dark); border: 2px solid var(--dark); padding: 12px 28px; font-size: 1rem; }
+.btn--outline-dark:hover { background: var(--dark); color: white; }
+.btn--support { background: transparent; color: var(--dark); border: 2px solid var(--dark); padding: 12px 28px; font-size: 1rem; }
+.btn--support:hover { background: var(--dark); color: white; }
+.btn--large { padding: 14px 28px; font-size: 1rem; }
+
+/* =========================================================================
+   NAVBAR
+   ========================================================================= */
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: white; border-bottom: 1px solid var(--border);
+  transition: box-shadow var(--transition);
+}
+.navbar--scrolled { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.navbar__container { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+
+.navbar__logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.5rem; color: var(--dark); }
+.navbar__logo-icon { width: 36px; height: 36px; flex-shrink: 0; }
+.navbar__logo-text { font-size: 1.375rem; font-weight: 800; }
+
+.navbar__toggle {
+  display: flex; flex-direction: column; justify-content: space-between;
+  width: 26px; height: 18px; background: transparent; border: none; cursor: pointer;
+}
+.navbar__toggle-bar { height: 2px; background: var(--dark); border-radius: 4px; transition: all var(--transition); }
+.navbar__toggle--active .navbar__toggle-bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
