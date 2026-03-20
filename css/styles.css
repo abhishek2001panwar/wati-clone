@@ -179,3 +179,103 @@ section { overflow: hidden; }
   font-size: 0.8125rem;
 }
 .dash-mockup__phone-header { font-weight: 700; margin-bottom: 12px; color: var(--dark); }
+.dash-mockup__phone-msg { background: #f0f0f0; border-radius: 12px; padding: 8px; margin-bottom: 6px; font-size: 0.75rem; }
+.dash-mockup__phone-reply { background: #d9fdd3; border-radius: 12px; padding: 8px; margin-bottom: 8px; font-size: 0.75rem; }
+.dash-mockup__phone-btns { display: flex; flex-direction: column; gap: 4px; }
+.dash-mockup__phone-btns span { background: #007AFF; color: white; border-radius: 12px; padding: 4px 8px; font-size: 0.6875rem; text-align: center; }
+
+/* =========================================================================
+   TRUST BAR
+   ========================================================================= */
+.trust-bar { padding: 72px 0; background: var(--bg-light); }
+.trust-bar__title { font-size: 2.25rem; font-weight: 800; text-align: center; color: var(--dark); margin-bottom: 48px; line-height: 1.2; }
+.trust-bar__logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px; }
+.trust-bar__logo-text { font-size: 1.5rem; font-weight: 800; }
+.trust-bar__logo-text--amazon { color: #FF9900; font-size: 1.75rem; }
+.trust-bar__logo-text--vedantu { color: #FF6B35; font-size: 1.625rem; font-style: italic; }
+.trust-bar__logo-text--welspun { color: #003087; font-size: 1.375rem; letter-spacing: 0.08em; }
+.trust-bar__logo-text--heritage { color: #007734; font-size: 1.5rem; }
+.trust-bar__logo-text--habuild { color: #333; }
+
+/* =========================================================================
+   WHATSAPP CORE
+   ========================================================================= */
+.whatsapp-core { padding: 80px 0; background: var(--bg-light); border-top: 1px solid var(--border); }
+.whatsapp-core__container { display: flex; align-items: center; gap: 60px; }
+.whatsapp-core__content { flex: 1; }
+.whatsapp-core__title { font-size: 2rem; font-weight: 800; color: var(--dark); margin-bottom: 20px; line-height: 1.2; }
+.whatsapp-core__text { font-size: 1.0625rem; color: var(--text-muted); line-height: 1.7; }
+.whatsapp-core__icons { display: flex; gap: 20px; align-items: center; }
+.channel-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.875rem; }
+.channel-icon--rcs { background: #1e87f0; color: white; }
+.channel-icon--instagram, .channel-icon--facebook, .channel-icon--whatsapp { background: transparent; }
+
+/* =========================================================================
+   WATI AI
+   ========================================================================= */
+.wati-ai { padding: 100px 0; background: var(--bg-light); }
+.wati-ai__container { text-align: center; }
+.wati-ai__label { font-size: 0.875rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #60a5fa; margin-bottom: 16px; }
+.wati-ai__title { font-size: 2.5rem; font-weight: 900; color: var(--dark); margin-bottom: 20px; letter-spacing: -0.02em; }
+.wati-ai__subtitle { font-size: 1.0625rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 60px; }
+
+.wati-ai__agents { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+
+/* Agent Cards */
+.agent-card {
+  flex: 1; min-width: 280px; max-width: 520px;
+  border-radius: 24px; padding: 28px; text-align: left;
+  border: 2px solid transparent;
+}
+.agent-card--pink { background: #fdf0fb; border-color: #f0abf0; }
+.agent-card--blue { background: #eff8ff; border-color: #93c5fd; }
+
+.agent-card__stat { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding: 12px 20px; border-radius: 50px; background: white; border: 2px solid currentColor; width: fit-content; }
+.agent-card--pink .agent-card__stat { border-color: #f0abf0; }
+.agent-card--blue .agent-card__stat { border-color: #93c5fd; }
+.agent-card__stat-num { font-size: 1.75rem; font-weight: 900; }
+.agent-card__stat-num--pink { color: #e879f9; }
+.agent-card__stat-num--blue { color: #38bdf8; }
+.agent-card__stat-label { font-size: 0.875rem; font-weight: 600; color: var(--text-muted); }
+
+.agent-card__chat { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+.agent-card__bubble { padding: 10px 14px; border-radius: 14px; font-size: 0.875rem; line-height: 1.5; }
+.agent-card__bubble--user { background: white; border-bottom-left-radius: 4px; align-self: flex-start; box-shadow: var(--shadow-sm); max-width: 85%; }
+.agent-card__bubble--bot { background: #dbeafe; border-bottom-right-radius: 4px; align-self: flex-end; max-width: 85%; }
+.agent-card__bubble--user-green { background: #dcfce7; border-bottom-left-radius: 4px; align-self: flex-start; max-width: 85%; }
+.agent-card__bubble--bot-white { background: white; border-bottom-right-radius: 4px; align-self: flex-end; box-shadow: var(--shadow-sm); max-width: 85%; }
+
+.agent-card__lead-card { background: white; border-radius: 12px; padding: 14px; box-shadow: var(--shadow-sm); }
+.agent-card__lead-name { font-weight: 700; font-size: 0.875rem; margin-bottom: 4px; }
+.agent-card__lead-score { font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 8px; }
+.agent-card__lead-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.agent-card__lead-tags span { background: var(--dark); color: white; border-radius: 20px; padding: 2px 8px; font-size: 0.6875rem; font-weight: 500; }
+
+.agent-card__title { font-size: 1.5rem; font-weight: 800; color: var(--dark); margin-bottom: 8px; }
+.agent-card__desc { font-size: 0.9375rem; color: var(--text-muted); }
+
+/* =========================================================================
+   BUYER JOURNEY
+   ========================================================================= */
+.buyer-journey { padding: 100px 0; background: var(--bg-light); }
+.buyer-journey__container { display: flex; align-items: center; gap: 64px; }
+.buyer-journey__content { flex: 1; }
+.buyer-journey__title { font-size: 2rem; font-weight: 800; color: var(--dark); margin-bottom: 32px; line-height: 1.2; }
+
+.buyer-journey__list { display: flex; flex-direction: column; gap: 20px; margin-bottom: 40px; }
+.buyer-journey__item { display: flex; gap: 14px; font-size: 1rem; color: var(--text); line-height: 1.6; }
+.buyer-journey__check { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; border: 2px solid #60a5fa; color: #60a5fa; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 800; margin-top: 2px; }
+
+.buyer-journey__stats { display: flex; align-items: center; gap: 0; margin-bottom: 36px; }
+.buyer-journey__stat { padding: 20px 32px; text-align: center; }
+.buyer-journey__stat:first-child { padding-left: 0; }
+.buyer-journey__stat-num { display: block; font-size: 2.25rem; font-weight: 900; color: #60a5fa; letter-spacing: -0.02em; }
+.buyer-journey__stat-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; color: var(--text-muted); text-transform: uppercase; }
+.buyer-journey__stat-divider { width: 1px; height: 60px; background: var(--border); }
+
+/* Visual */
+.buyer-journey__visual { flex: 1; display: flex; justify-content: center; }
+.buyer-journey__circle {
+  width: 320px; height: 320px; border-radius: 50%;
+  background: radial-gradient(circle, #dbeafe 0%, #bfdbfe 40%, #93c5fd 100%);
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
