@@ -1,0 +1,87 @@
+/* =========================================================================
+   RESPONSIVE STYLES — Mobile First
+   ========================================================================= */
+
+/* -------- TABLET: min-width 768px -------- */
+@media (min-width: 768px) {
+
+  /* Hero */
+  .hero__title { font-size: 3.75rem; }
+
+  /* Trust bar - logo row */
+  .trust-bar__logos { flex-wrap: nowrap; justify-content: space-between; }
+  .trust-bar__title { font-size: 2.75rem; }
+
+  /* Whatsapp Core */
+  .whatsapp-core__container { flex-direction: row; }
+
+  /* AI Agents */
+  .wati-ai__agents { flex-wrap: nowrap; }
+  .agent-card { min-width: 0; }
+
+  /* Buyer Journey */
+  .buyer-journey__container { flex-direction: row; }
+  .buyer-journey__circle { width: 380px; height: 380px; }
+
+  /* Support stats */
+  .support-section__stats { flex-direction: row; }
+
+  /* Pricing */
+  .pricing__cards { grid-template-columns: repeat(3, 1fr); }
+
+  /* Footer */
+  .footer__grid { grid-template-columns: 2fr 1fr 1fr 1fr 1fr; }
+  .footer__bottom { flex-direction: row; justify-content: space-between; }
+}
+
+/* -------- DESKTOP: min-width 1024px -------- */
+@media (min-width: 1024px) {
+
+  /* Navbar — show full menu */
+  .navbar__toggle { display: none; }
+
+  .navbar__nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  .navbar__menu { flex-direction: row; gap: 4px; }
+  .navbar__actions { flex-direction: row; gap: 10px; padding: 0; }
+
+  /* Hero */
+  .hero { padding: 150px 0 100px; }
+  .hero__title { font-size: 4.5rem; }
+
+  /* Pricing */
+  .pricing__title { font-size: 2.75rem; }
+
+  /* Features/tabs section */
+  .dash-mockup { min-height: 480px; }
+}
+
+/* -------- MOBILE only cleanup -------- */
+@media (max-width: 767px) {
+  .hero { padding: 100px 0 60px; }
+  .hero__title { font-size: 2.25rem; }
+  .trust-bar__title { font-size: 1.75rem; }
+  .wati-ai__title { font-size: 1.75rem; }
+  .buyer-journey__title { font-size: 1.5rem; }
+  .buyer-journey__container { flex-direction: column; }
+  .buyer-journey__circle { width: 280px; height: 280px; }
+  .whatsapp-core__container { flex-direction: column; }
+  .tabs-section__tab { padding: 12px 20px; font-size: 0.9375rem; }
+  .dash-mockup__sidebar { width: 120px; }
+  .dashboard-mockup__phone { display: none; }
+  .integrations__title { font-size: 1.75rem; }
+  .pricing__title { font-size: 1.75rem; }
+  .support-section__stats { flex-direction: column; }
+  .support-section__stat-divider { width: 60px; height: 1px; margin: 0 auto; }
+  .buyer-journey__stats { flex-wrap: wrap; }
+  .infra-section__stats { flex-direction: column; gap: 32px; }
+}
