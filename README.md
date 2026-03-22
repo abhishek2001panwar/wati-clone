@@ -1,7 +1,7 @@
 # WATI Landing Page Clone
 
 
-> **Live Demo:** [[Insert GitHub Pages or Vercel Link Here](https://abhishek2001panwar.github.io/wati-clone/)] 
+[[Live link](https://abhishek2001panwar.github.io/wati-clone/)] 
 
 ## 🚀 Overview
 This repository contains a frontend implementation of the [WATI landing page](https://www.wati.io/lp/home/). It was developed as part of an evaluation assignment focusing on translating a polished design into a fully functional, responsive, and semantic web interface without the use of CSS frameworks like Tailwind or Bootstrap. Let the code speak for itself!
